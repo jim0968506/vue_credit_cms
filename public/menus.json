@@ -1,0 +1,136 @@
+[
+    {
+        "path": "/home",
+        "meta": {
+            "title": "首頁"
+        }
+    },
+    {
+        "path": "/loan-input",
+        "component": "layout",
+        "redirect": "/loan-input/index",
+        "meta": {
+            "roles": [
+                "input"
+            ],
+            "title": "貸款管理"
+        },
+        "children": [
+            {
+                "path": "/loan-input/index",
+                "path1": "/loan-input/index",
+                "component": "loan-input/index",
+                "name": "loan-input/index",
+                "meta": {
+                    "title": "貸款申請"
+                }
+            }
+        ]
+    },
+    {
+        "path": "/application-manage",
+        "component": "layout",
+        "redirect": "/application-manage/index",
+        "meta": {
+            "roles": [
+                "input"
+            ],
+            "title": "申請管理"
+        },
+        "children": [
+            {
+                "path": "/application-manage/index",
+                "path1": "/application-manage/index",
+                "component": "application-manage/index",
+                "name": "application-manage/index",
+                "meta": {
+                    "title": "申請列表"
+                }
+            }
+        ]
+    },
+    {
+        "path": "/loan-approve",
+        "component": "layout",
+        "redirect": "/loan-approve/first",
+        "meta": {
+            "roles": [
+                "approve"
+            ],
+            "title": "貸款審批"
+        },
+        "children": [
+            {
+                "path": "/loan-approve/first",
+                "path1": "/loan-approve/first",
+                "component": "loan-approve/first",
+                "name": "loan-approve/first",
+                "meta": {
+                    "title": "初審"
+                }
+            },
+            {
+                "path": "/loan-approve/end",
+                "path1": "/loan-approve/end",
+                "component": "loan-approve/end",
+                "name": "loan-approve/end",
+                "meta": {
+                    "title": "終審"
+                }
+            }
+        ]
+    },
+    {
+        "path": "/contract-manage",
+        "component": "layout",
+        "redirect": "/contract-manage/IndexView",
+        "meta": {
+            "roles": [
+                "administrator"
+            ],
+            "title": "合同管理"
+        },
+        "children": [
+            {
+                "path": "/contract-manage/IndexView",
+                "path1": "/contract-manage/IndexView",
+                "component": "contract-manage/IndexView",
+                "name": "contract-manage/IndexView",
+                "meta": {
+                    "title": "合同列表"
+                }
+            }
+        ]
+    },
+    {
+        "path": "/permission",
+        "component": "layout",
+        "redirect": "/permission/create",
+        "meta": {
+            "roles": [
+                "administrator"
+            ],
+            "title": "許可權管理"
+        },
+        "children": [
+            {
+                "path": "/permission/create",
+                "path1": "/permission/create",
+                "component": "permission/create",
+                "name": "permission/create",
+                "meta": {
+                    "title": "建立管理員"
+                }
+            },
+            {
+                "path": "/permission/list",
+                "path1": "/permission/list",
+                "component": "permission/list",
+                "name": "permission/list",
+                "meta": {
+                    "title": "列表展示"
+                }
+            }
+        ]
+    }
+]
